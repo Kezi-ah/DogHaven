@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Cart</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <p>DogHaven</p>
+    </div>
+
+    <div>
+      <ul class="icons">
+        <div class="icon-wrapper">
+          <li><a href="index.html" class="brwse">Home</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="about.html" class="brwse">About</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="contact.html" class="brwse">Contact</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <div class="count">
+            <li><a href="cart.html" class="brwse">Cart</a> <span class="cart-count" id="cart-count">0</span></li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </header>
+
+  <section id="empty-cart" class="empty-cart">
+    <div class="empty-content">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" height="90px" viewBox="0 -960 960 960" width="100px" fill="#000000"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+      </div>
+      <div class="contents">
+      <h3>Your Cart is Empty</h3>
+      <p>Looks like you haven’t added anything yet.</p>
+      </div>
+      <a href="browse-dogs.html" class="browse-btn">Browse Dogs</a>
+    </div>
+  </section>
+
+  <main id="cart-container" class="cart-container hidden">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items" class="cart-items"></div>
+
+    <div class="cart-summary">
+      <h3>Order Summary</h3>
+      <p>Subtotal: ₦<span id="subtotal">0</span></p>
+      <p>Tax (5%): ₦<span id="tax">0</span></p>
+      <h4>Total: ₦<span id="total">0</span></h4>
+      <button id="checkout-btn" class="checkout-btn">Proceed to Checkout</button>
+
+    </div>
+  </main>
+
+</body>
+<script src="JS/cart.js"></script>
+
+</html>

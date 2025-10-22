@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Dogs</title>
+    <link rel="stylesheet" href="css/browse-dogs.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <p>DogHaven</p>
+        </div>
+
+        <div>
+            <ul class="icons">
+                <div class="icon-wrapper">
+                    <li><a href="index.html" class="brwse">Home</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="about.html" class="brwse">About</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="contact.html" class="brwse">Contact</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="cart.html" class="brwse">Cart</a> <span class="cart-count" id="cart-count">0</span></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <div class="whole">
+        <section>
+            <div class="browse">
+                <h2>Browse Dogs</h2>
+                <p>Find your perfect companion from our selection of amazing dogs</p>
+            </div>
+        </section>
+
+        <section class="first">
+            <div class="second">
+                <label for="text">Search</label>
+                <input type="text" name="" id="" placeholder="Search by name or breed..." class="input">
+            </div>
+            <div class="second" onchange="filterDogs()">
+                <label for="text">Breed</label>
+
+                <select id="breed">
+                    <option value="">-- Select Breed --</option>
+                    <option value="golden retriever">Golden Retriever</option>
+                    <option value="bulldog">Bulldog</option>
+                    <option value="german shepherd">German Shepherd</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="maltese">Maltese</option>
+                    <option value="cocker spaniel">Cocker Spaniel</option>
+                </select>
+            </div>
+            <div class="second">
+                <label for="text">Size</label>
+                <select name="text" id="size" onchange="filterDogs()">
+                    <option>All sizes</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="snd">
+                <div class="card" id="golden-retriever">
+                    <div class="card-image">
+                        <img src="images/golden-retriever1.jpg" alt="Border Collie">
+                    </div>
+                    <div class="card-description">
+                        <h3>Buddy</h3>
+                        <p>Golden Retriever • 3 years</p>
+                        <p>Buddy is a loving Golden Retriever who enjoys long walks and playing fetch. He's great with
+                            kids and other pets.</p>
+                        <p class="price">$1,500</p>
+                        <a href="details.html" class="btns">View Details</a>
+                        <button class="btns add-to-cart" data-name="Buddy" data-price="1500" data-image="images/golden-retriever1.jpg">Add to cart</button>
+
+                    </div>
+                </div>
+                <div class="card" id="bulldog">
+                    <div class="card-image">
+                        <img src="images/bulldog3.jpg" alt="Border Collie">
+                    </div>
+
+                    <div class="card-description" >
+                        <h3>Rocky</h3>
+                        <p>Bulldog • 3 years</p>
+                        <p>Rocky is a laid-back Bulldog who enjoys leisurely walks and lounging around the house.</p>
+                        <p class="price">$1,500</p>
+                        <a href="details.html" class="btns">View Details</a>
+                         <button class="btns add-to-cart" data-name="Rocky" data-price="1500" data-image="images/bulldog3.jpg">Add to cart</button>
+
+                    </div>
+                </div>
+                <div class="card" id="german-shepherd" >
+                    <div class="card-image">
+                        <img src="images/german-shepard1.jpg" alt="Border Collie">
+                    </div>
+                    <div class="card-description">
+                        <h3>Max</h3>
+                        <p>German Shepard • 1 years</p>
+                        <p>Max is a young German Shepherd with great potential. He's protective of his family and eager
+                            to learn.</p>
+                        <p class="price">$1,500</p>
+                        <a href="details.html" class="btns">View Details</a>
+                       <button class="btns add-to-cart" data-name="Max" data-price="1500" data-image="images/german-shepard1.jpg">Add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="snd">
+                <div class="card" id="beagle">
+                    <div class="card-image">
+                        <img src="images/Beagle1.jpg" alt="Border Collie">
+                    </div>
+                    <div class="card-description">
+                        <h3>Bella</h3>
+                        <p>Beagle • 4 years</p>
+                        <p>Bella is a sweet beagle who loves everyone she meets. Perfect family dog with a calm
+                            demeanor.</p>
+                        <p class="price">$1,500</p>
+                        <a href="details.html" class="btns">View Details</a>
+                         <button class="btns add-to-cart" data-name="Bella" data-price="1500" data-image="images/Beagle1.jpg">Add to cart</button>
+
+                    </div>
+                </div>
+                <div class="card" id="maltese">
+                    <div class="card-image">
+                        <img src="images/maltese1.jpg" alt="Border Collie">
+                    </div>
+
+                    <div class="card-description">
+                        <h3>Luna</h3>
+                        <p>Maltese • 3 years</p>
+                        <p>Highly intelligent and active, great for training</p>
+                        <p class="price">$1,500</p>
+                        <a href="details.html" class="btns">View Details</a>
+                         <button class="btns add-to-cart" data-name="Luna" data-price="1500" data-image="images/maltese1.jpg">Add to cart</button>
+
+                    </div>
+                </div>
+                <div class="card" id="cocker-spaniel">
+                    <div class="card-image">
+                        <img src="images/cocker-spaniel1.jpg" alt="Border Collie">
+                    </div>
+                    <div class="card-description">
+                        <h3>Storm</h3>
+                        <p>Cocker Spaniell • 3 years</p>
+                        <p>Storm is a beautiful Cocker Spaniell . He needs lots of exercise and mental stimulation.</p>
+                        <p class="price">$1,500</p>
+                        <a href="details.html" class="btns">View Details</a>
+                         <button class="btns add-to-cart" data-name="Storm" data-price="1500" data-image="images/cocker-spaniel1.jpg">Add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p id="no-match" style="display:none; color:Black; font-weight:bold; font-size: 40px;">
+            No dogs matching your criteria
+        </p>
+    </div>
+</body>
+<script src="JS/browse-dogs.js"></script>
+
+</html>

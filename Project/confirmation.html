@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirm Payment</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <p>DogHaven</p>
+    </div>
+
+    <div>
+      <ul class="icons">
+        <div class="icon-wrapper">
+          <li><a href="index.html" class="brwse">Home</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="about.html" class="brwse">About</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="contact.html" class="brwse">Contact</a></li>
+        </div>
+        <div class="icon-wrapper">
+        </div>
+      </ul>
+    </div>
+  </header>
+
+
+  <main class="confirmation-page">
+    <div class="order-title" >
+      <div class="success-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="34px" fill="#000000" style="background-color: green; padding: 4px; border-radius:4px; color:white">
+          <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+        </svg>
+      </div>
+      <h1>Order Confirmed!</h1>
+      <p>Thank you for your purchase! Your dog(s) will be prepared for delivery.</p>
+
+      <h2 >
+        Your order number is <span id="order-number"></span>
+      </h2>
+    </div>
+
+
+    <section class="order-section">
+      <div class="left">
+        <div class="your-dogs">
+          <h3>Your Dogs</h3>
+          <div id="dog-list"></div>
+        </div>
+
+        <div class="delivery-info">
+          <h3>Delivery Information</h3>
+          <div class="delivery-box">
+            <div>
+              <h4>Delivery Address</h4>
+              <p id="delivery-address"></p>
+            </div>
+            <div>
+              <h4>Expected Delivery</h4>
+              <p id="expected-delivery"></p>
+              <small>We'll coordinate the exact delivery time with you closer to the date.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="what-next">
+          <h3>What Happens Next?</h3>
+          <ul>
+            <li>📧 <strong>Confirmation Email</strong> — We'll send a confirmation email to <span
+                id="email-display"></span></li>
+            <li>🐾 <strong>Health Check & Preparation</strong> — Our team will ensure your dog is healthy and ready for
+              delivery.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>Order Summary</h3>
+        <p><strong>Order Number:</strong> <span id="summary-order-number"></span></p>
+        <p><strong>Date:</strong> <span id="order-date"></span></p>
+        <p><strong>Payment Status:</strong> <span class="status completed">COMPLETED</span></p>
+        <hr />
+        <p>Subtotal: ₦<span id="summary-subtotal"></span></p>
+        <p>Tax: ₦<span id="summary-tax"></span></p>
+        <p>Delivery: Free</p>
+        <h4>Total Paid: ₦<span id="summary-total"></span></h4>
+
+        <div class="buttons">
+          <button onclick="window.location.href='browse-dogs.html'">Continue Shopping</button>
+          <button onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+<script src="JS/cart.js"></script>
+
+</html>

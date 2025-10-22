@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="stylesheet" href="css/details.css">
+</head>
+
+<body>
+  <header class="Header">
+    <div class="logos">
+      <p>DogHaven</p>
+    </div>
+
+    <div>
+      <ul class="icons">
+        <div class="icon-wrapper">
+          <li><a href="index.html" class="brwse">Home</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="about.html" class="brwse">About</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="contact.html" class="brwse">Contact</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="cart.html" class="brwse">Cart</a></li>
+        </div>
+      </ul>
+    </div>
+  </header>
+  <div>
+    <section class="section">
+
+      <div class="container">
+        <div class="image-box">
+          <div class="main-image">
+            <img id="mainDogImage" src="images/golden-retriever1.jpg" alt="Main Dog">
+            <small id="imageCount">1 / 4</small>
+          </div>
+
+          <div class="thumbnail-row">
+            <img src="images/golden-retriever1.jpg" class="thumbnail active" onclick="changeImage('images/golden-retriever1.jpg', 1)">
+            <img src="images/golden-retriever2.jpg" class="thumbnail" onclick="changeImage('images/golden-retriever2.jpg', 2)">
+            <img src="images/golden-retriever3.jpg" class="thumbnail" onclick="changeImage('images/golden-retriever3.jpg', 3)">
+             <img src="images/golden-retriever4.jpg" class="thumbnail" onclick="changeImage('images/golden-retriever4.jpg', 3)">
+          </div>
+        </div>
+
+
+        <div class="details-card">
+          <h2>Buddy</h2>
+          <p>Golden Retriever</p>
+          <p><span class="price">$1,200</span><span class="availability">Available Now</span></p>
+          <p> San Francisco, CA</p>
+
+          <div class="info">
+            <p><strong>Age:</strong> 2 years</p>
+            <p><strong>Size:</strong> Large</p>
+            <p><strong>Microchip:</strong> 985141001234567</p>
+            <p><strong>Registration:</strong> AKC Registration #12345678</p>
+          </div>
+
+          <div class="tags">
+            <span>Friendly</span>
+            <span>Energetic</span>
+            <span>Loyal</span>
+          </div>
+
+          <button class="btn-primary" onclick="addToCart()" >Add to Cart - $1,200</button>
+          <!-- <button class="btns add-to-cart" data-name="Buddy" data-price="1500" data-image="images/golden-retriever1.jpg">Add to cart- $1,200</button> -->
+          <button class="btn-secondary">Schedule a Visit</button>
+
+          <ul class="guarantee">
+            <li>30-day health guarantee</li>
+            <li>Free delivery within 100 miles</li>
+            <li>Lifetime support included</li>
+            <li>Pet insurance available</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="header">
+        <div class="contain">
+          <nav>
+            <ul>
+              <li><a href="#" class="nav-link active" data-target="dogprofile-content">Overview</a></li>
+              <li><a href="#" class="nav-link" data-target="Health-content">Health</a></li>
+              <li><a href="#" class="nav-link" data-target="training-content">Training</a></li>
+              <li><a href="#" class="nav-link" data-target="Personality-content">Personality</a></li>
+              <li><a href="#" class="nav-link" data-target="care-content">Care</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <main class="contain">
+        <section class="dogprofile-content active">
+
+          <div class="dog-info">
+            <h1>About Buddy</h1>
+            <p class="dog-description">
+              Buddy is a loving Golden Retriever who enjoys long walks and playing fetch.
+              He's great with kids and other pets.
+            </p>
+
+            <div class="traits-container">
+              <div class="">
+                <h3>Key Traits</h3>
+                <ul class="traits-list">
+                  <li>Gentle with children</li>
+                  <li>Loves water</li>
+                  <li>Eager to please</li>
+                  <li>Social with other dogs</li>
+                </ul>
+              </div>
+
+              <div class="">
+                <h3>Ideal Family</h3>
+                <ul class="traits-list">
+                  <li>Active individuals or families</li>
+                  <li>Experience with Golden Retrievers preferred</li>
+                  <li>Access to secure outdoor space</li>
+                  <li>Time for daily exercise and training</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+
+    <section class="Health-content">
+      <div class="Container">
+        <!-- Health Records -->
+        <div class="card">
+          <h2> Health Records</h2>
+
+          <div class="health-check">
+            <h3>Latest Health Check</h3>
+            <p><strong>Date:</strong> 2024-09-10</p>
+            <p><strong>Veterinarian:</strong> Dr. Sarah Johnson, VetCare Center</p>
+            <p><strong>Notes:</strong> Excellent health, no issues detected. Heart, lungs, and joints all normal.</p>
+          </div>
+
+          <h3>Vaccination Status</h3>
+          <div class="vaccination">
+            <div class="vaccine">
+              <div>
+                <strong>DHPP</strong><br>
+                <span>Last: 2024-08-15</span>
+              </div>
+              <div class="status">
+                <span class="badge">Current</span>
+                <span class="due">Due: 2025-08-15</span>
+              </div>
+            </div>
+
+            <div class="vaccine">
+              <div>
+                <strong>Rabies</strong><br>
+                <span>Last: 2024-07-20</span>
+              </div>
+              <div class="status">
+                <span class="badge">Current</span>
+                <span class="due">Due: 2027-07-20</span>
+              </div>
+            </div>
+
+            <div class="vaccine">
+              <div>
+                <strong>Bordetella</strong><br>
+                <span>Last: 2024-08-01</span>
+              </div>
+              <div class="status">
+                <span class="badge">Current</span>
+                <span class="due">Due: 2025-02-01</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health Guarantees -->
+        <div class="card">
+          <h2> Health Guarantees</h2>
+          <ul class="guarantees">
+            <li><strong>30-Day Health Guarantee</strong><br>Full health guarantee covering genetic conditions and
+              infectious diseases.</li>
+            <li><strong>Lifetime Support</strong><br>Access to our veterinary team and behavioral specialists for life.
+            </li>
+            <li><strong>Genetic Testing</strong><br>Both parents tested for breed-specific genetic conditions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="training-content">
+      <div class="training-card">
+        <div class="training-left">
+          <h2> Training & Skills</h2>
+          <p><span class="badge">Advanced</span> Training Level</p>
+          <p class="trained-by">Trained by: <span>Professional Training Academy</span></p>
+
+          <h3>Mastered Skills</h3>
+          <ul class="skills-list">
+            <li>● Sit</li>
+            <li>● Come</li>
+            <li>● Heel</li>
+            <li>● Drop it</li>
+            <li>● Stay</li>
+            <li>● Down</li>
+            <li>● Fetch</li>
+            <li>● Leave it</li>
+          </ul>
+        </div>
+
+        <div class="training-right">
+          <h3>Training Recommendations</h3>
+
+          <div class="recommendation-box blue">
+            <strong>Continued Learning</strong>
+            <p>Buddy would benefit from ongoing training to maintain skills and learn new ones.</p>
+          </div>
+
+          <div class="recommendation-box green">
+            <strong>Exercise Requirements</strong>
+            <p>Mental stimulation through training should be combined with physical exercise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Personality-content">
+      <div class="profile-card">
+        <h2> Personality Profile</h2>
+
+        <div class="progress-section">
+          <div class="progress-item">
+            <p>Energy Level <span>80%</span></p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <p>Friendliness <span>95%</span></p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%;"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <p>Trainability <span>90%</span></p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="traits-compatibility">
+          <div class="traits">
+            <h3>Personality Traits</h3>
+            <ul>
+              <li>Gentle with children</li>
+              <li>Loves water</li>
+              <li>Eager to please</li>
+              <li>Social with other dogs</li>
+            </ul>
+          </div>
+
+          <div class="compatibility">
+            <h3>Social Compatibility</h3>
+            <div class="compatibility-item">
+              <span>Children (all ages)</span><span class="tag excellent">Excellent</span>
+            </div>
+            <div class="compatibility-item">
+              <span>Other Dogs</span><span class="tag very-good">Very Good</span>
+            </div>
+            <div class="compatibility-item">
+              <span>Cats</span><span class="tag intro">With Introduction</span>
+            </div>
+            <div class="compatibility-item">
+              <span>Strangers</span><span class="tag friendly">Friendly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="care-content">
+      <div class="care-card">
+        <!-- LEFT SECTION -->
+        <div class="care-left">
+          <h2>⏱ Daily Care Requirements</h2>
+
+          <div class="care-item">
+            <h3>√ Exercise Needs</h3>
+            <p>2 hours daily - walks, fetch, swimming</p>
+          </div>
+
+          <div class="care-item">
+            <h3>Grooming</h3>
+            <p>Weekly brushing, monthly professional grooming</p>
+          </div>
+
+          <div class="care-item">
+            <h3>Feeding</h3>
+            <p>3 cups high-quality dog food, twice daily</p>
+          </div>
+
+          <div class="care-item">
+            <h3>Living Space</h3>
+            <p>Large yard preferred, apartment suitable with adequate exercise</p>
+          </div>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="care-right">
+          <h3>Care Package Included</h3>
+
+          <div class="package-item">
+            <div class="icon"></div>
+            <div>
+              <strong>Premium Food Starter Kit</strong>
+              <p>2-week supply of current food</p>
+            </div>
+          </div>
+
+          <div class="package-item">
+            <div class="icon"></div>
+            <div>
+              <strong>Comfort Toys</strong>
+              <p>Familiar toys from current environment</p>
+            </div>
+          </div>
+
+          <div class="package-item">
+            <div class="icon"></div>
+            <div>
+              <strong>Care Guide & Records</strong>
+              <p>Complete health and care documentation</p>
+            </div>
+          </div>
+
+          <div class="package-item">
+            <div class="icon"></div>
+            <div>
+              <strong>Training Resources</strong>
+              <p>Access to online training platform</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="JS/details.js"></script>
+
+</html>

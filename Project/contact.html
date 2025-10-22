@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <p>DogHaven</p>
+        </div>
+
+        <div>
+            <ul class="icons">
+                    <div class="icon-wrapper">
+                        <li><a href="index.html" class="brwse">Home</a></li>
+                    </div>
+                    <div class="icon-wrapper">
+                        <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+                    </div>
+                    <div class="icon-wrapper">
+                        <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+                    </div>
+                    <div class="icon-wrapper">
+                        <li><a href="about.html" class="brwse">About</a></li>
+                    </div>
+                    <div class="icon-wrapper">
+                        <li><a href="contact.html" class="brwse">Contact</a></li>
+                    </div>
+                    <div class="icon-wrapper">
+                        <li><a href="cart.html" class="brwse">Cart</a></li>
+                    </div>
+                </ul>
+        </div>
+    </header>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <!-- Left Side: Message Form -->
+      <div class="contact-form">
+        <h3><i class="fa-regular fa-message"></i> Send us a Message</h3>
+        <form id="messageForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Name *</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input type="email" id="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" id="phone">
+            </div>
+            <div class="form-group">
+              <label>Subject *</label>
+              <select id="subject" required>
+                <option value="">Select a topic</option>
+                <option value="adoption">Adoption</option>
+                <option value="support">Support</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label>Message *</label>
+            <textarea id="message" rows="4" placeholder="Please describe how we can help you..." required></textarea>
+          </div>
+
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Right Side: Contact Info -->
+      <div class="contact-info">
+        <div class="info-block">
+          <h4>Get in Touch</h4>
+          <p><strong> Phone</strong><br>+1 (555) 123-4567<br><span>Mon–Fri 9AM–6PM EST</span></p>
+          <p><strong> Email</strong><br>support@dogfinder.com<br><span>We respond within 24 hours</span></p>
+          <p><strong> Address</strong><br>123 Dog Lover Lane<br>Pet City, PC 12345</p>
+          <p><strong> Business Hours</strong><br>Mon–Fri: 9AM–6PM<br>Saturday: 10AM–4PM</p>
+        </div>
+
+        <div class="emergency-block">
+          <h4>Emergency Support</h4>
+          <p>If you have an urgent issue with a recently delivered dog:</p>
+          <div class="emergency-btn"> Emergency: (555) 911-DOGS</div>
+          <small>Available 24/7 for urgent health concerns</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="contact.js"></script>
+  <script src="https://kit.fontawesome.com/a2e0b1b6c4.js" crossorigin="anonymous"></script>
+</body>
+</html>

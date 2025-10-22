@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <p>DogHaven</p>
+    </div>
+
+    <div>
+      <ul class="icons">
+        <div class="icon-wrapper">
+          <li><a href="index.html" class="brwse">Home</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="about.html" class="brwse">About</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="contact.html" class="brwse">Contact</a></li>
+        </div>
+        <div class="icon-wrapper">
+          <li><a href="cart.html" class="brwse">Cart</a> <span class="cart-count" id="cart-count">0</span></li>
+        </div>
+      </ul>
+    </div>
+  </header>
+
+  <div class="Payment">
+    <!-- Left: Payment Info -->
+    <div class="big-card">
+      <h3><span class="lock-icon">🔒</span> Secure Payment</h3>
+
+      <div class="payment-method">
+        <div class="method active" id="card-method" onclick="selectMethod('card')">
+          <div>
+            <label>Credit/Debit Card</label>
+            <small>Visa, Mastercard, American Express</small>
+          </div>
+          <input type="radio" name="payment" checked>
+        </div>
+
+        <div class="method" id="paypal-method" onclick="selectMethod('paypal')">
+          <div>
+            <label>PayPal</label>
+            <small>Pay with your PayPal account</small>
+          </div>
+          <input type="radio" name="payment" class="radio">
+        </div>
+
+        <div class="method" id="bank-method" onclick="selectMethod('bank')">
+          <div>
+            <label>Bank Transfer</label>
+            <small>Direct bank transfer</small>
+          </div>
+          <input type="radio" name="payment">
+        </div>
+      </div>
+
+      <!-- Credit Card Details -->
+      <div class="card-details" id="card-details">
+        <div style="display: flex; flex-direction: column;">
+          <label>Cardholder Name</label>
+          <input type="text" id="cardName" placeholder="John Doe">
+
+          <label>Card Number</label>
+          <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+        </div>
+        <div class="row">
+          <div style="flex:1;">
+            <label>Expiry Date</label>
+            <input type="text" id="expiry" placeholder="MM/YY">
+          </div>
+          <div style="flex:1;">
+            <label>CVV</label>
+            <input type="text" id="cvv" placeholder="123">
+          </div>
+        </div>
+      </div>
+
+      <!-- PayPal Info -->
+      <div class="card-details" id="paypal-details">
+        <p>After clicking "Complete Payment," you’ll be redirected to PayPal to complete your purchase securely.</p>
+      </div>
+
+      <!-- Bank Transfer Info -->
+      <div class="card-details" id="bank-details">
+        <p>Our bank details will be sent to your email after you confirm payment. Please include your order ID in the
+          reference.</p>
+      </div>
+
+      <button class="btn btn-primary" id="payBtn" onclick="processPayment()">Complete Payment</button>
+      <button class="btn btn-secondary" onclick="window.location.href='checkout.html'">Back to Checkout</button>
+    </div>
+
+    <!-- Right: Order Summary -->
+    <div class="card order-summary">
+      <h3>Order Total</h3>
+      <div id="checkout-items"></div>
+      <p>Subtotal: $<span id="subtotal">0</span></p>
+      <p>Tax (5%): $<span id="tax">0</span></p>
+      <h4>Total: $<span id="total">0</span></h4>
+
+      <div class="secure-box">
+        🔒 <span><b>Secure Payment</b><br>Your payment information is encrypted and secure</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="JS/cart.js"></script>
+
+</html>

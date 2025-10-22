@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Finder</title>
+    <link rel="stylesheet" href="css/AI-finder.css">
+    <link rel="stylesheet" href="css/browse-dogs.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <p>DogHaven</p>
+        </div>
+
+        <div>
+            <ul class="icons">
+                <div class="icon-wrapper">
+                    <li><a href="index.html" class="brwse">Home</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="browse-dogs.html" class="brwse">Browse Dogs</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="AI-finder.html" class="brwse">AI Dog Finder</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="about.html" class="brwse">About</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="contact.html" class="brwse">Contact</a></li>
+                </div>
+                <div class="icon-wrapper">
+                    <li><a href="cart.html" class="brwse">Cart</a></li>
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <section class="dogquiz">
+        <div class="quiz-container" id="quiz-container">
+            <h1>AI Dog Finder</h1>
+            <p class="subtitle">Answer a few questions and let our AI find your perfect dog breed</p>
+
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+
+            <p id="progress-text" style="font-size:13px; color:#666; margin-bottom:20px;">
+                Question <span id="current">1</span> of <span id="total">6</span> (0% Complete)
+            </p>
+
+            <div id="quiz-content"></div>
+
+            <div class="btn-container">
+                <button class="btn" id="prev-btn">Previous</button>
+                <button class="btn" id="next-btn">Next</button>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="JS/AI-finder.js"></script>
+
+</html>
